@@ -17,6 +17,8 @@ using GMap.NET.CacheProviders;
 using System.Drawing.Printing;
 using System.IO;
 
+using GeoUtility.GeoSystem;
+
 namespace GmapTutorial1
 {
     public partial class Form1 : Form
@@ -543,6 +545,24 @@ namespace GmapTutorial1
             }
         }
 
-       
+        private void btnConvertToMgrs_Click(object sender, EventArgs e)
+        {
+           // Geographic geo = new Geographic(8.12345, 50.56789);
+            Geographic geo = new Geographic(9.692965, 8.447336);
+            UTM utm = (UTM)geo;
+            double east = utm.East;
+            double north = utm.North;
+            int zone = utm.Zone;
+            string band = utm.Band;
+
+            lblLonMgrs.Text = "longitude = " + Convert.ToString(east);
+            lblLatMgrs.Text = "lattitude = " + Convert.ToString(north) + " ZONE: " + Convert.ToString(zone) + "BAND : " + band;
+        }
+
+        private void btnOpenHarry_Click(object sender, EventArgs e)
+        {
+            UsingGoogleMapApi f2 = new UsingGoogleMapApi();
+            f2.ShowDialog(); // Shows Form2
+        }
     }
 }

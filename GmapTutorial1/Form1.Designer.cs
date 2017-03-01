@@ -69,6 +69,14 @@
             this.btnPrintMap = new System.Windows.Forms.Button();
             this.btnAutoRoute = new System.Windows.Forms.Button();
             this.cmbBoxMapType = new System.Windows.Forms.ComboBox();
+            this.btnConvertToMgrs = new System.Windows.Forms.Button();
+            this.lblLonMgrs = new System.Windows.Forms.Label();
+            this.lblLatMgrs = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnOpenHarry = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtBoxNumBorderSize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
@@ -119,9 +127,9 @@
             // 
             // txtBoxLat
             // 
-            this.txtBoxLat.Location = new System.Drawing.Point(3, 31);
+            this.txtBoxLat.Location = new System.Drawing.Point(38, 31);
             this.txtBoxLat.Name = "txtBoxLat";
-            this.txtBoxLat.Size = new System.Drawing.Size(121, 21);
+            this.txtBoxLat.Size = new System.Drawing.Size(86, 21);
             this.txtBoxLat.TabIndex = 0;
             // 
             // cmbMapProvider2
@@ -143,9 +151,9 @@
             // 
             // txtBoxLon
             // 
-            this.txtBoxLon.Location = new System.Drawing.Point(3, 4);
+            this.txtBoxLon.Location = new System.Drawing.Point(38, 4);
             this.txtBoxLon.Name = "txtBoxLon";
-            this.txtBoxLon.Size = new System.Drawing.Size(121, 21);
+            this.txtBoxLon.Size = new System.Drawing.Size(85, 21);
             this.txtBoxLon.TabIndex = 0;
             // 
             // textBox2
@@ -214,7 +222,7 @@
             this.btnMapProvider.TabIndex = 3;
             this.btnMapProvider.Text = "Map provider";
             this.btnMapProvider.UseVisualStyleBackColor = true;
-             // 
+            // 
             // txtBoxToolTip
             // 
             this.txtBoxToolTip.Location = new System.Drawing.Point(130, 4);
@@ -488,11 +496,96 @@
             this.cmbBoxMapType.TabIndex = 34;
             this.cmbBoxMapType.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
+            // btnConvertToMgrs
+            // 
+            this.btnConvertToMgrs.Location = new System.Drawing.Point(435, 222);
+            this.btnConvertToMgrs.Name = "btnConvertToMgrs";
+            this.btnConvertToMgrs.Size = new System.Drawing.Size(200, 53);
+            this.btnConvertToMgrs.TabIndex = 35;
+            this.btnConvertToMgrs.Text = "convert to mgrs";
+            this.btnConvertToMgrs.UseVisualStyleBackColor = true;
+            this.btnConvertToMgrs.Click += new System.EventHandler(this.btnConvertToMgrs_Click);
+            // 
+            // lblLonMgrs
+            // 
+            this.lblLonMgrs.AutoSize = true;
+            this.lblLonMgrs.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLonMgrs.Location = new System.Drawing.Point(126, 145);
+            this.lblLonMgrs.Name = "lblLonMgrs";
+            this.lblLonMgrs.Size = new System.Drawing.Size(21, 13);
+            this.lblLonMgrs.TabIndex = 36;
+            this.lblLonMgrs.Text = "lon";
+            // 
+            // lblLatMgrs
+            // 
+            this.lblLatMgrs.AutoSize = true;
+            this.lblLatMgrs.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLatMgrs.Location = new System.Drawing.Point(129, 115);
+            this.lblLatMgrs.Name = "lblLatMgrs";
+            this.lblLatMgrs.Size = new System.Drawing.Size(18, 13);
+            this.lblLatMgrs.TabIndex = 37;
+            this.lblLatMgrs.Text = "lat";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(324, 62);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.TabIndex = 38;
+            this.label5.Text = "label5";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label6.Location = new System.Drawing.Point(214, 533);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 39;
+            this.label6.Text = "label6";
+            // 
+            // btnOpenHarry
+            // 
+            this.btnOpenHarry.Location = new System.Drawing.Point(476, 59);
+            this.btnOpenHarry.Name = "btnOpenHarry";
+            this.btnOpenHarry.Size = new System.Drawing.Size(132, 48);
+            this.btnOpenHarry.TabIndex = 40;
+            this.btnOpenHarry.Text = "open harry tutorial";
+            this.btnOpenHarry.UseVisualStyleBackColor = true;
+            this.btnOpenHarry.Click += new System.EventHandler(this.btnOpenHarry_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(3, 7);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 13);
+            this.label7.TabIndex = 41;
+            this.label7.Text = "LON";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(3, 38);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(27, 13);
+            this.label8.TabIndex = 42;
+            this.label8.Text = "LAT";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1308, 606);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.btnOpenHarry);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblLatMgrs);
+            this.Controls.Add(this.lblLonMgrs);
+            this.Controls.Add(this.btnConvertToMgrs);
             this.Controls.Add(this.cmbBoxMapType);
             this.Controls.Add(this.btnAutoRoute);
             this.Controls.Add(this.btnPrintMap);
@@ -581,6 +674,14 @@
         private System.Windows.Forms.Button btnPrintMap;
         private System.Windows.Forms.Button btnAutoRoute;
         private System.Windows.Forms.ComboBox cmbBoxMapType;
+        private System.Windows.Forms.Button btnConvertToMgrs;
+        private System.Windows.Forms.Label lblLonMgrs;
+        private System.Windows.Forms.Label lblLatMgrs;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnOpenHarry;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
 
